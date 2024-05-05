@@ -28,7 +28,7 @@ class AuditProducer(AbstractLambda):
         if 'OldImage' in event['Records'][0]['dynamodb']:
             oldValue = event['Records'][0]['dynamodb']['OldImage']['value']['N']
             output.update({
-                "updatedAttribute": key,
+                "updatedAttribute": "value",
                 "oldValue": int(oldValue),
                 "newValue": int(newValue)
             })
