@@ -404,29 +404,29 @@
       }
     },
     "/signin": {
-      "requestBody": {
-        "description": "Sign in",
-        "content": {
-          "application/json": {
-            "schema": {
-              "type": "object",
-              "properties": {
-                "email": {
-                  "type": "string"
-                },
-                "password": {
-                  "type": "string"
-                }
-              },
-              "required": ["email", "password"]
-            }
-          }
-        },
-        "required": true
-      },
       "post": {
         "description": "Sign in",
         "summary": "Sign in",
+        "requestBody": {
+          "description": "Sign in",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                },
+                "required": ["email", "password"]
+              }
+            }
+          },
+          "required": true
+        },
         "responses": {
           "200": {
             "description": "200 response",
