@@ -85,6 +85,7 @@
         "summary": "Add reservation",
         "description": "Add reservation",
         "requestBody": {
+          "description": "Reservation",
           "content": {
             "application/json": {
               "schema": {
@@ -281,6 +282,7 @@
         "summary": "Add table",
         "description": "Add table",
         "requestBody": {
+          "description": "Table",
           "content": {
             "application/json": {
               "schema": {
@@ -403,6 +405,7 @@
     },
     "/signin": {
       "requestBody": {
+        "description": "Sign in",
         "content": {
           "application/json": {
             "schema": {
@@ -670,6 +673,7 @@
         "summary": "Sign up",
         "description": "Sign up",
         "requestBody": {
+          "description": "Sign up",
           "content": {
             "application/json": {
               "schema": {
